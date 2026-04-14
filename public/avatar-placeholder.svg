@@ -1,0 +1,21 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121B28"/>
+      <stop offset="1" stop-color="#1D2E43"/>
+    </linearGradient>
+    <radialGradient id="accent" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 260) rotate(90) scale(240)">
+      <stop stop-color="#F47423" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#F47423" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" rx="48" fill="url(#bg)"/>
+  <rect x="56" y="56" width="688" height="888" rx="36" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.14)"/>
+  <circle cx="400" cy="320" r="190" fill="url(#accent)"/>
+  <circle cx="400" cy="320" r="120" fill="#E8EEF7" fill-opacity="0.92"/>
+  <path d="M208 784C208 658 294 576 400 576C506 576 592 658 592 784V816H208V784Z" fill="#E8EEF7" fill-opacity="0.92"/>
+  <rect x="248" y="860" width="304" height="24" rx="12" fill="#F47423"/>
+  <text x="400" y="926" text-anchor="middle" fill="#B7C4D7" font-family="Arial, sans-serif" font-size="28" letter-spacing="6">
+    YOUR PHOTO
+  </text>
+</svg>
