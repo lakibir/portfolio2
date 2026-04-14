@@ -123,6 +123,8 @@ Create `.env.local` with:
 ```env
 EMAIL_USER=
 EMAIL_PASS=
+ADMIN_USERNAME=
+ADMIN_PASSWORD=
 GITHUB_TOKEN=
 CONTENTFUL_SPACE_ID=
 CONTENTFUL_ACCESS_TOKEN=
@@ -133,6 +135,7 @@ Notes:
 
 - `EMAIL_USER` should be the Gmail address receiving contact form messages.
 - `EMAIL_PASS` should be a Gmail App Password, not your normal account password.
+- `ADMIN_USERNAME` and `ADMIN_PASSWORD` protect the `/admin` route with HTTP Basic Auth in production.
 - `GITHUB_TOKEN` is optional but helps avoid GitHub API rate limits.
 - Contentful variables are optional and only needed if you want CMS-managed projects.
 
@@ -155,7 +158,7 @@ Notes:
 
 ## Admin Dashboard
 
-Visit `/admin` to manage local project overrides in the browser. This dashboard is intended as a lightweight editing surface for demos or rapid iteration. For a multi-user workflow, connect Contentful and replace the local storage implementation with a persistent backend.
+Visit `/admin` to manage local project overrides in the browser. In production deployments, this route is protected by HTTP Basic Auth when `ADMIN_USERNAME` and `ADMIN_PASSWORD` are set. If they are missing in production, requests to `/admin` are redirected to `/`.
 
 ## Deploy to Vercel
 
