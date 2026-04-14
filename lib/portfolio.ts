@@ -145,13 +145,13 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "atelier-commerce",
-    title: "Atelier Commerce",
+    title: "student management system",
     description:
-      "E-commerce storefront with fast product browsing, editorial content, and checkout integration.",
+      "A web-based application developed to efficiently manage student records, attendance, academic performance, and course information within a centralized system. It streamlines administrative processes, enhances data accuracy, and provides secure, role-based access for administrators, instructors, and students.",
     image: "/projects/project-commerce.svg",
     categories: ["E-commerce", "Brand"],
-    stack: ["Next.js", "Stripe", "Sanity", "Framer Motion"],
-    githubUrl: "https://github.com/vercel/commerce",
+    stack: ["php", "Stripe", "MySQL", "blade", "Tailwind CSS"],
+    githubUrl: "https://github.com/lakibir/student-management.git",
     liveUrl: "https://vercel.com/templates/next.js/nextjs-commerce",
     featured: true,
   },
